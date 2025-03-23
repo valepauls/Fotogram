@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotogram</title>
+
+    <link
+      rel="shortcut icon"
+      href="./favicon/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link rel="icon" href="./favicon/favicon.png" type="image/png" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body onload="init()">
+    <header>
+      <img src="./Fotogram_Logo.svg" alt="" />
+    </header>
+
+    <main>
+      <h1>My personal Workout Album</h1>
+      <div class="button_container">
+        <button onclick="renderFiltered(1)">Workout 1</button>
+        <button onclick="renderFiltered(2)">Workout 2</button>
+      </div>
+      <section id="content"></section>
+    </main>
+
+    <footer>
+      <img src="./favicon/favicon.png" alt="" />
+      <p>Valerius Pauls</p>
+    </footer>
+
+    <div onclick="closeOverlay(event)" id="overlay" class="overlay d_none">
+      <div id="image_dialog" class="image_dialog"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
